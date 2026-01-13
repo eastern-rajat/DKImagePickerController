@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6EF6B12F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */; };
+		3A6EF6B22F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */; };
 		5A251F85240545560043EAAF /* DKImagePickerController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5A251F84240545560043EAAF /* DKImagePickerController.podspec */; };
 		9C13DF6F1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */; };
 		9C1B8EE11E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B8EE01E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift */; };
@@ -125,6 +127,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5A251F84240545560043EAAF /* DKImagePickerController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DKImagePickerController.podspec; sourceTree = "<group>"; };
 		9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKImagePickerControllerDefaultUIDelegate.swift; sourceTree = "<group>"; };
 		9C1B8EE01E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKAssetGroupCellItemProtocol.swift; sourceTree = "<group>"; };
@@ -372,6 +375,7 @@
 		9CDEF0EF1B62279F003340FE /* DKImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
+				3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */,
 				9CDEF0F01B62279F003340FE /* DKImagePickerController.swift */,
 				9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */,
 				9C6B3E001C219724009684FE /* View */,
@@ -551,6 +555,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -576,6 +581,7 @@
 				9C6E4AE31F4DB2A0008F1CD2 /* DKCameraResource.bundle in Resources */,
 				9CD45E7A1B7C9E4600365976 /* DKImagePickerController.bundle in Resources */,
 				9CBF3F861AB15E040000F1D1 /* LaunchScreen.xib in Resources */,
+				3A6EF6B12F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */,
 				9CBF3F871AB15E0D0000F1D1 /* LaunchScreen.strings in Resources */,
 				9CBF3F7E1AB15D210000F1D1 /* Images.xcassets in Resources */,
 				9CBF3F881AB15E100000F1D1 /* Main.strings in Resources */,
@@ -595,6 +601,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6EF6B22F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */,
 				B9EFB9991D210A22006CDCAA /* DKImagePickerController.bundle in Resources */,
 				9C6E4AE41F4DB2A0008F1CD2 /* DKCameraResource.bundle in Resources */,
 			);
