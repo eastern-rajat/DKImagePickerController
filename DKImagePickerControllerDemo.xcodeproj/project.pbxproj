@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A6EF6B12F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */; };
-		3A6EF6B22F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */; };
 		5A251F85240545560043EAAF /* DKImagePickerController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5A251F84240545560043EAAF /* DKImagePickerController.podspec */; };
 		9C13DF6F1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */; };
 		9C1B8EE11E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B8EE01E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift */; };
@@ -127,7 +125,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5A251F84240545560043EAAF /* DKImagePickerController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DKImagePickerController.podspec; sourceTree = "<group>"; };
 		9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKImagePickerControllerDefaultUIDelegate.swift; sourceTree = "<group>"; };
 		9C1B8EE01E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKAssetGroupCellItemProtocol.swift; sourceTree = "<group>"; };
@@ -181,6 +178,10 @@
 		B9EFB9751D20FB7D006CDCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9EFB9931D2105A3006CDCAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3A6EF6B42F1780FE007162D9 /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9C35CBFC19DBB00700557269 /* Frameworks */ = {
@@ -375,7 +376,7 @@
 		9CDEF0EF1B62279F003340FE /* DKImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				3A6EF6B02F1687BD007162D9 /* PrivacyInfo.xcprivacy */,
+				3A6EF6B42F1780FE007162D9 /* Resources */,
 				9CDEF0F01B62279F003340FE /* DKImagePickerController.swift */,
 				9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */,
 				9C6B3E001C219724009684FE /* View */,
@@ -458,6 +459,9 @@
 			dependencies = (
 				B9EFB9771D20FB7D006CDCAA /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				3A6EF6B42F1780FE007162D9 /* Resources */,
+			);
 			name = DKImagePickerControllerDemo;
 			productName = CustomImagePicker;
 			productReference = 9C35CBFF19DBB00700557269 /* DKImagePickerControllerDemo.app */;
@@ -493,6 +497,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3A6EF6B42F1780FE007162D9 /* Resources */,
 			);
 			name = DKImagePickerController;
 			productName = DKImagePickerController;
@@ -581,7 +588,6 @@
 				9C6E4AE31F4DB2A0008F1CD2 /* DKCameraResource.bundle in Resources */,
 				9CD45E7A1B7C9E4600365976 /* DKImagePickerController.bundle in Resources */,
 				9CBF3F861AB15E040000F1D1 /* LaunchScreen.xib in Resources */,
-				3A6EF6B12F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */,
 				9CBF3F871AB15E0D0000F1D1 /* LaunchScreen.strings in Resources */,
 				9CBF3F7E1AB15D210000F1D1 /* Images.xcassets in Resources */,
 				9CBF3F881AB15E100000F1D1 /* Main.strings in Resources */,
@@ -601,7 +607,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6EF6B22F1687BD007162D9 /* PrivacyInfo.xcprivacy in Resources */,
 				B9EFB9991D210A22006CDCAA /* DKImagePickerController.bundle in Resources */,
 				9C6E4AE41F4DB2A0008F1CD2 /* DKCameraResource.bundle in Resources */,
 			);
@@ -855,7 +860,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -872,7 +878,10 @@
 				DEVELOPMENT_TEAM = 85M74MVK78;
 				INFOPLIST_FILE = DKImagePickerControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaozi.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -894,7 +903,10 @@
 				DEVELOPMENT_TEAM = 85M74MVK78;
 				INFOPLIST_FILE = DKImagePickerControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaozi.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -918,7 +930,11 @@
 				);
 				INFOPLIST_FILE = DKImagePickerControllerDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -937,7 +953,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = DKImagePickerControllerDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -962,7 +982,11 @@
 				INFOPLIST_FILE = DKImagePickerController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DKImagePickerController.DKImagePickerController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -991,7 +1015,11 @@
 				INFOPLIST_FILE = DKImagePickerController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DKImagePickerController.DKImagePickerController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1011,7 +1039,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = DKImagePickerControllerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DKImagePickerController.DKImagePickerControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -1029,7 +1061,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = DKImagePickerControllerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DKImagePickerController.DKImagePickerControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
