@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     "DKImagePickerController/DKImagePickerController.bundle"
   ]
   s.resource_bundles = {
-    'DKImagePickerController' => ['Sources/DKImagePickerController/PrivacyInfo.xcprivacy']
+    'DKImagePickerController' => ['DKImagePickerController/PrivacyInfo.xcprivacy']
   }
 
   s.frameworks    = "Foundation", "UIKit", "Photos"
