@@ -14,16 +14,15 @@ Pod::Spec.new do |s|
 
   s.source_files  = "DKImagePickerController/**/*.{h,swift}"
 
-  s.resources = [
-    "DKImagePickerController/DKImagePickerController.bundle"
-  ]
-  s.resource_bundles = {
-    'DKImagePickerController' => ['DKImagePickerController/PrivacyInfo.xcprivacy']
-  }
+  s.resources = "DKImagePickerController/DKImagePickerController.bundle"
 
   s.frameworks    = "Foundation", "UIKit", "Photos"
   s.requires_arc  = true
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+
+  s.subspec 'Resource' do |resource|
+    resource.resource_bundle = { "DKImagePickerController" => "DKImagePickerController/Resources/*" }
+  end
 
   s.subspec 'Camera' do |camera|
     camera.ios.source_files = "DKCamera/DKCamera.swift", "DKCamera/DKCameraResource.swift"
