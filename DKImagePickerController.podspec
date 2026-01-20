@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.source_files  = "DKImagePickerController/**/*.{h,swift}"
 
   s.resources = ["DKImagePickerController/DKImagePickerController.bundle", "DKImagePickerController/Resources/*"]
-  s.resource_bundle = { "DKImagePickerController" => "DKImagePickerController/Resources/*" }
 
   s.frameworks    = "Foundation", "UIKit", "Photos"
   s.requires_arc  = true
